@@ -2,7 +2,7 @@
 
 package:
   name: ruamel_yaml
-  version: 0.11.7
+  version: {{ version }}
 
 source:
   fn: ruamel_yaml-{{ version }}.tar.gz
