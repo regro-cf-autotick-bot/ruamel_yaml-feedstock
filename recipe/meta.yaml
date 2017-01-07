@@ -10,7 +10,7 @@ source:
   sha256: a705cb1f0eea40d17da713161af3ed00ffa724e401fbd49f35f979bd9529cd00
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
