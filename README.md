@@ -1,13 +1,13 @@
 About ruamel_yaml
 =================
 
-Home: https://bitbucket.org/kalefranz/yaml
+Home: https://bitbucket.org/ruamel/yaml
 
 Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
-Summary: A fork of ruamel.yaml.
+Summary: A patched copy of ruamel.yaml.
 
 
 
