@@ -1,13 +1,13 @@
 # coding: utf-8
 from __future__ import print_function, absolute_import
 
+version_info=(0, 15, 35)
 __version__ = "$VERSION"
 __name__ = "ruamel_yaml"
 __author__ = "Anthon van der Neut"
 __author_email__ ="a.van.der.neut@ruamel.eu"
 __description__ = ("ruamel_yaml is a YAML parser/emitter that supports roundtrip preservation "
                    "of comments, seq/map flow style, and map key order")
-
 
 try:
     from .cyaml import *                               # NOQA
