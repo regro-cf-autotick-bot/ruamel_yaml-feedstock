@@ -1,24 +1,26 @@
-{% set version = "0.11.14" %}
+{% set version = "0.15.35" %}
+# The version_info tuple in __init__.py must also be updated
 
 package:
   name: ruamel_yaml
   version: {{ version }}
 
 source:
-  fn: ruamel_yaml-{{ version }}.tar.gz
   url: https://bitbucket.org/ruamel/yaml/get/{{ version }}.tar.gz
-  sha256: b78d394e192b6d0911bd59f794ceea88143fac4e373b76ed7e48143a2a29b33c
-
+  sha256: 69bec987b5ac6ecf360c091e264e80b40df8fb004c394f730e30e79fdd91beec
+  patches:
+    - ordereddict_test.patch
+      
 build:
   number: 0
   no_link: .*\.(pyd|dll)  # [win]
 
 requirements:
   build:
+    - python
+    - pip
     - toolchain
     - posix               # [win]
-    - python
-    - setuptools
     - cython
     - yaml
 
