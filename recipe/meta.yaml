@@ -13,14 +13,16 @@ source:
       
 build:
   number: 0
-  no_link: .*\.(pyd|dll)  # [win]
+  no_link: .*\.(pyd|dll)   # [win]
 
 requirements:
   build:
+    - {{ compiler("c") }}
+    - posix                # [win]
+
+  host:
     - python
     - pip
-    - toolchain
-    - posix               # [win]
     - cython
     - yaml
 
