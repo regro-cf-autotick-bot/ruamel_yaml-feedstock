@@ -8,9 +8,7 @@ package:
 source:
   url: https://bitbucket.org/ruamel/yaml/get/{{ version }}.tar.gz
   sha256: 256fe31c23003339f7a056a68ffdd7a55544ae1195a9a1f155effe51e46d175f
-  patches:
-    - ordereddict_test.patch
-      
+
 build:
   number: 0
   no_link: .*\.(pyd|dll)   # [win]
