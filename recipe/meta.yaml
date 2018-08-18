@@ -1,4 +1,4 @@
-{% set version = "0.15.55" %}
+{% set version = "0.15.56" %}
 # The version_info tuple in __init__.py must also be updated
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://bitbucket.org/ruamel/yaml/get/{{ version }}.tar.gz
-  sha256: 55aa3f8faa8dfb2d87901cdc53c635022069d6dccab25ab3c6bf4afb2f23f6e7
+  sha256: 20abb350f2db694a8519ff306cb0f3a39d7aa0394401fd6e898bcd683bf4a463
   patches:
     - ordereddict_test.patch
 
