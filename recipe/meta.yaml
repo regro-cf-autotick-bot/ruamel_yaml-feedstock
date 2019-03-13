@@ -33,7 +33,6 @@ requirements:
 test:
   requires:
     - pytest
-    - conda
 
   imports:
     - ruamel_yaml

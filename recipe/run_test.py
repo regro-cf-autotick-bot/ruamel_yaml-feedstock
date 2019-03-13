@@ -15,6 +15,7 @@ print(ver_string)
 assert ver_string == ruamel_yaml.__version__
 
 
+"""
 # downstream conda config tests
 import os
 from os.path import join
@@ -41,3 +42,4 @@ conda_config_show_sources = check_output('conda config --show-sources'.split(), 
 assert b'_test_channel_' in conda_config_show_sources, conda_config_show_sources
 os.remove(condarc_path)
 os.rmdir(tmp_dir)
+"""
