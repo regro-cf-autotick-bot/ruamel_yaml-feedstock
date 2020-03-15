@@ -5,8 +5,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://bitbucket.org/ruamel/yaml/get/{{ version }}.tar.gz
-  sha256: 8529f909d8983a2b80bb3af60e425c418edf54f2fa132d863c43b3353f901203
+  url: https://pypi.io/packages/source/r/ruamel.yaml/ruamel.yaml-{{ version }}.tar.gz
+  sha256: 4f203351575dba0829c7b1e5d376d08cf5f58e4a2b844e8ce552b3e41cd414e6
   patches:
     - ordereddict_test.patch
 
