@@ -25,6 +25,8 @@ extensions = [Extension("ruamel_yaml.ext._ruamel_yaml",
                         runtime_library_dirs=[] if sys.platform == 'win32' else library_dirs)]
 
 setup(
+    # name *must not* be equivalent to ruamel.yaml
+    # under pip normalization if pip metadata is being installed.
     name=ruamel_yaml.__name__ + "_conda",
     version=ruamel_yaml.__version__,
     author=ruamel_yaml.__author__,

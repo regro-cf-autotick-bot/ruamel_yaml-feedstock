@@ -29,11 +29,17 @@ requirements:
 
 test:
   requires:
+    - pip
     - pytest
 
   imports:
     - ruamel_yaml
     - ruamel_yaml.ext._ruamel_yaml
+  commands:
+    # check that ruamel_yaml doesn't claim to be ruamel.yaml
+    - if pip show ruamel.yaml; then exit 1; fi  # [unix]
+    - $PYTHON -m pip install ruamel.yaml  # [unix]
+    - $PYTHON -c "import ruamel.yaml"  # [unix]
 
 about:
   home: https://bitbucket.org/ruamel/yaml
