@@ -9,7 +9,7 @@ source:
   sha256: 4f203351575dba0829c7b1e5d376d08cf5f58e4a2b844e8ce552b3e41cd414e6
 
 build:
-  number: 1003
+  number: 1004
   no_link: .*\.(pyd|dll)   # [win]
 
 requirements:
@@ -33,8 +33,6 @@ requirements:
 test:
   requires:
     - pip
-    - pytest
-
   imports:
     - ruamel_yaml
     - ruamel_yaml.ext._ruamel_yaml
@@ -43,9 +41,10 @@ test:
     - if pip show ruamel.yaml; then exit 1; fi  # [unix]
     - $PYTHON -m pip install ruamel.yaml  # [unix]
     - $PYTHON -c "import ruamel.yaml"  # [unix]
+    - pip check
 
 about:
-  home: https://bitbucket.org/ruamel/yaml
+  home: https://sourceforge.net/p/ruamel-yaml/code/ci/default/tree
   license: MIT
   license_family: MIT
   license_file: LICENSE
